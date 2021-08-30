@@ -15,7 +15,6 @@ public class FunctionalInterfaceDemo {
 
 	public static void main(String[] args) {
 		DemoInterface f = () -> System.out.println("Functional interface demo");
-		
 		f.show();
 	}
 }
