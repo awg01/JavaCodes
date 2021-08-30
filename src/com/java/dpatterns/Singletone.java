@@ -30,13 +30,13 @@ class SingletonDemo{
 	private SingletonDemo() {
 	}
 	
-	private static SingletonDemo instance = null;
+	public static SingletonDemo instance = null;
 	
 	public static void show() {
 		System.out.println("Show called");
 	}
 	
-	public static synchronized SingletonDemo getInstance() {
+	public static SingletonDemo getInstance() {
 		if(instance == null) {
 			instance = new SingletonDemo();
 		}
