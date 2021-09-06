@@ -29,7 +29,8 @@ public class LambdaDemo {
 		
 //		3 lambda expression
 //		IA obj = (String name) -> System.out.println("Show" + name);
-		IA obj = (name) -> System.out.println("Hello " + name);
+//		IA obj = (name) -> System.out.println("Hello " + name);
+		IA obj = name -> System.out.println("Hello " + name);
 		obj.show("Akash");
 	}
 
