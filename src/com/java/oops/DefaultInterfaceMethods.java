@@ -5,6 +5,9 @@ interface Phone{
 	default void message() {
 		System.out.println("sent");
 	}
+	static void phoneInfo() {
+		System.out.println("phone info");
+	}
 }
 
 
@@ -21,6 +24,7 @@ public class DefaultInterfaceMethods {
          Phone p = new AndroidPhone();
          p.call();
          p.message();
+         Phone.phoneInfo();
 	}
 
 }
