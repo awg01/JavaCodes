@@ -1,7 +1,7 @@
 package com.java.oops;
 
 interface IA{
-	void show();
+	void show(String name);
 }
 
 //class CA implements IA{
@@ -28,8 +28,9 @@ public class LambdaDemo {
 //		obj.show();
 		
 //		3 lambda expression
-		IA obj = () -> System.out.println("Show");
-		obj.show();
+//		IA obj = (String name) -> System.out.println("Show" + name);
+		IA obj = (name) -> System.out.println("Hello " + name);
+		obj.show("Akash");
 	}
 
 }
