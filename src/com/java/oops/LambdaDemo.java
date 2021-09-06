@@ -19,12 +19,16 @@ public class LambdaDemo {
 //		obj.show();
 		
 //		2 anonymous inner class
-		IA obj = new IA() {
-			@Override
-			public void show() {
-				System.out.println("Show");
-			}
-		};
+//		IA obj = new IA() {
+//			@Override
+//			public void show() {
+//				System.out.println("Show");
+//			}
+//		};
+//		obj.show();
+		
+//		3 lambda expression
+		IA obj = () -> System.out.println("Show");
 		obj.show();
 	}
 
