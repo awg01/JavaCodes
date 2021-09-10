@@ -20,6 +20,13 @@ public class StringDemo1 {
 		 System.out.println( "true" );
 	 }
 	 
+	 String s6 = "abcd";
+	 String s7 = new String("abcd");
 	 
+	 String s8[] = new String[5];
+	 System.out.println(s8.length); //not length()
+	 
+	 String s9 = "big surprise";
+	 System.out.println(s9.toString());
    }
 }
