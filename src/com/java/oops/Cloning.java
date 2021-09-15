@@ -8,9 +8,9 @@ public class Cloning {
         obj.j=6;
      
         Child  obj1 = (Child) obj.clone();
-
+        obj1.j = 10;
         
-        System.out.println("obj1 "+obj1); //5 6
+        System.out.println("obj1 "+obj1); //5 10
         System.out.println("obj "+obj);   //5 6
 	}
 }
