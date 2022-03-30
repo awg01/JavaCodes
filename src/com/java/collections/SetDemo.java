@@ -8,13 +8,14 @@ import java.util.TreeSet;
 
 public class SetDemo {
 
-	public static void showWorking(Set<String> obj) {
+	//generic method
+	public static <T> void showWorking(Set<T> obj) {
 		
-		obj.add("mi");
-		obj.add("srh");
-		obj.add("rcb");
-		obj.add("csk");
-		obj.add("kkr");
+		obj.add((T) "mi");
+		obj.add((T)"srh");
+		obj.add((T)"rcb");
+		obj.add((T)"csk");
+		obj.add((T)"kkr");
 		
 		System.out.println(obj.toString());
 	}
