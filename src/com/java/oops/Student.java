@@ -1,8 +1,9 @@
 package com.java.oops;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Student {
+public class Student implements Serializable{
     private int roll;
 	private String name;
 	private List<String> hobbies;
